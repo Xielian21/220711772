@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    padding: 30px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #ffe0f0, #d9eaff, #e0ffe5);
+    color: #30304d;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 3px solid #d6c2ff;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(120, 70, 180, 0.18);
+}
+
+.header {
+    margin-bottom: 25px;
+    padding: 22px 15px;
+    text-align: center;
+    background: linear-gradient(120deg, #ff80ab, #b388ff, #64b5f6);
+    border-radius: 14px;
+}
+
+.header h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 28px;
+    text-shadow: 2px 2px 4px rgba(70, 40, 110, 0.25);
+}
+
+.header p {
+    margin-bottom: 0;
+    color: #ffffff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #d6c2ff;
+    background-color: #ffffff;
+}
+
+td {
+    padding: 14px 12px;
+    border: 1px solid #e4d9ff;
+    vertical-align: top;
+}
+
+td:first-child {
+    width: 35%;
+    color: #7139a5;
+    font-weight: bold;
+}
+
+tr:nth-child(odd) {
+    background-color: #fff4d6;
+}
+
+tr:nth-child(even) {
+    background-color: #f1eaff;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 380px;
+    padding: 10px 12px;
+    border: 2px solid #cbb8ff;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #30304d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+textarea {
+    max-width: 100%;
+    resize: vertical;
+}
+
+input[type="file"] {
+    max-width: 100%;
+    padding: 8px;
+    background-color: #fff0f6;
+    border: 1px dashed #f06292;
+    border-radius: 8px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #7c4dff;
+    box-shadow: 0 0 0 3px rgba(124, 77, 255, 0.15);
+}
+
+.option-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-group p,
+.payment-group p {
+    margin: 5px 0 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #e040fb;
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+}
+
+.submit-cell {
+    padding: 22px 12px;
+    text-align: center;
+    background-color: #e1f8e8 !important;
+}
+
+input[type="submit"] {
+    padding: 12px 32px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #ff4081, #ab47bc, #536dfe);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 12px rgba(171, 71, 188, 0.25);
+    transition: background 0.2s, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(90deg, #f50057, #8e24aa, #3949ab);
+    transform: translateY(-2px);
+}
+
+.footer {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #e1f5fe, #f3e5f5, #fce4ec);
+    color: #754a91;
+    text-align: center;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 12px 8px;
+    }
+
+    .container {
+        padding: 15px 10px;
+    }
+
+    .header h1 {
+        font-size: 22px;
+    }
+
+    td {
+        display: block;
+        width: auto;
+        padding: 10px;
+    }
+
+    td:first-child {
+        width: auto;
+        padding-bottom: 4px;
+        border-bottom: none;
+    }
+
+    td[colspan="2"] {
+        display: table-cell;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Formulir Registrasi Seminar</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Formulir Registrasi Seminar</h1>
+            <p>Lengkapi data berikut untuk mendaftar seminar.</p>
+        </div>
+
+        <form action="" method="post" enctype="multipart/form-data">
+            <table>
+                <tr>
+                    <td><label for="nama">Nama Peserta</label></td>
+                    <td><input type="text" id="nama" name="nama" size="30" required="required" /></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Alamat Email</label></td>
+                    <td><input type="email" id="email" name="email" size="30" required="required" /></td>
+                </tr>
+                <tr>
+                    <td><label for="nim">Nomor Induk Mahasiswa (NIM)</label></td>
+                    <td><input type="text" id="nim" name="nim" size="30" required="required" /></td>
+                </tr>
+                <tr>
+                    <td><label for="prodi">Program Studi</label></td>
+                    <td>
+                        <select id="prodi" name="prodi">
+                            <option value="Informatika">Informatika</option>
+                            <option value="Sistem Informasi">Sistem Informasi</option>
+                            <option value="Teknik Industri">Teknik Industri</option>
+                            <option value="Manajemen">Manajemen</option>
+                            <option value="Akuntansi">Akuntansi</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jenis Tiket</td>
+                    <td>
+                        <div class="option-group">
+                            <input type="radio" id="reguler" name="tiket" value="Reguler" />
+                            <label for="reguler">Reguler</label>
+                            <input type="radio" id="vip" name="tiket" value="VIP" />
+                            <label for="vip">VIP</label>
+                            <input type="radio" id="online" name="tiket" value="Online" />
+                            <label for="online">Online</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Topik Seminar</td>
+                    <td>
+                        <div class="checkbox-group">
+                            <p><input type="checkbox" id="ai" name="topik" value="Artificial Intelligence" />
+                            <label for="ai">Artificial Intelligence</label></p>
+                            <p><input type="checkbox" id="data" name="topik" value="Data Science" />
+                            <label for="data">Data Science</label></p>
+                            <p><input type="checkbox" id="cyber" name="topik" value="Cyber Security" />
+                            <label for="cyber">Cyber Security</label></p>
+                            <p><input type="checkbox" id="cloud" name="topik" value="Cloud Computing" />
+                            <label for="cloud">Cloud Computing</label></p>
+                            <p><input type="checkbox" id="web" name="topik" value="Web Development" />
+                            <label for="web">Web Development</label></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="jam">Jadwal Seminar</label></td>
+                    <td>
+                        <select id="jam" name="jam">
+                            <option value="08.00 - 10.00">08.00 - 10.00</option>
+                            <option value="10.00 - 12.00">10.00 - 12.00</option>
+                            <option value="13.00 - 15.00">13.00 - 15.00</option>
+                            <option value="15.00 - 17.00">15.00 - 17.00</option>
+                            <option value="19.00 - 21.00">19.00 - 21.00</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cara Pembayaran</td>
+                    <td>
+                        <div class="payment-group">
+                            <p><input type="radio" id="qris" name="pembayaran" value="QRIS" />
+                            <label for="qris">QRIS</label></p>
+                            <p><input type="radio" id="transfer" name="pembayaran" value="Transfer Bank" />
+                            <label for="transfer">Transfer Bank</label></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="pertanyaan">Pertanyaan untuk Narasumber</label></td>
+                    <td><textarea id="pertanyaan" name="pertanyaan" rows="6" cols="30"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="bukti">Unggah Bukti Pembayaran</label></td>
+                    <td><input type="file" id="bukti" name="bukti" accept="image/gif, image/jpeg, image/png" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="submit-cell">
+                        <input type="submit" name="simpan" value="Daftar Seminar" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <p class="footer">Pastikan informasi yang kamu masukkan sudah benar.</p>
+    </div>
+</body>
+</html>
